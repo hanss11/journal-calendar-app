@@ -18,7 +18,7 @@ const JournalEntry = ({ value }) => {
             {value}
           </p>
           <p className="journal__entry-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              Texto de una nota para probar.</p>
         </div>
         <div className="journal__entry-date-box">
             <span >monday</span>
