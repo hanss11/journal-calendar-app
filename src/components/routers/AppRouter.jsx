@@ -1,10 +1,15 @@
 import React from "react";
+
+import {Provider} from 'react-redux';
+import { store } from "../../store/store";
+
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import JournalScreen from "../journal/JournalScreen";
 import AuthRouter from "./AuthRouter";
 
 export const AppRouter = () => {
   return (
+    <Provider store={store}>
     <Router>
       <div>
         <Switch>
@@ -14,5 +19,6 @@ export const AppRouter = () => {
         </Switch>
       </div>
     </Router>
+    </Provider>
   );
 };
